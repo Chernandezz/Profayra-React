@@ -19,8 +19,8 @@
 
 .header .navbar {
   display: flex;
-  align-items: center;
   gap: 2rem;
+  align-items: center;
 }
 
 .header .navbar a {
@@ -33,50 +33,59 @@
   color: var(--white);
 }
 
-.header .navbar .divider {
+.header .divider {
   color: var(--light-white);
 }
 
-/* Responsive Styles */
+#menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--white);
+  display: none;
+}
 
+#menu-btn i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .header {
-    flex-wrap: wrap;
-  }
-
-  .header .navbar {
-    flex: 1;
-    margin-top: 1rem;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-
-  .header .navbar.active {
-    display: flex;
-  }
-
-  .header .navbar a {
-    margin: 0.5rem 0;
-    font-size: 1.6rem;
-  }
-
-  .header .navbar .divider {
-    display: none;
-  }
-
-  .header .fas.fa-bars {
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: var(--white);
+  #menu-btn {
     display: block;
   }
 
-  .header .fas.fa-bars.open {
-    transform: rotate(90deg);
+  .header .navbar {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(
+      --background-color
+    ); /* replace with the appropriate color */
+    padding: 2rem;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 999;
   }
 
-  /* Added CSS */
-  .header.menu-open .navbar {
-    display: flex;
+  .header .navbar.open {
+    max-height: 500px; /* adjust as needed */
+    opacity: 1;
+  }
+
+  .header .navbar a {
+    color: white;
+    font-size: 1.8rem;
+  }
+
+  .header .divider {
+    display: none;
   }
 }

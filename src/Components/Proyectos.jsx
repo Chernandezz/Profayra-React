@@ -54,7 +54,7 @@ const listaProyectos = [
     tecnologias: ["HTML", "CSS", "JavaScript"],
   },
   {
-    link: "https://blogdecafe-ch.netlify.app/",
+    link: "https://glittering-moonbeam-4893f4.netlify.app/",
     img: RockEdmImage,
     alt: "Rock & EDM",
     titulo: "Rock & EDM",

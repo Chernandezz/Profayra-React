@@ -108,10 +108,3 @@ hr {
   text-transform: uppercase;
   text-align: center;
 }
-
-#menu-btn {
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: var(--white);
-  display: none;
-}
