@@ -1,5 +1,3 @@
-
-
 .home {
   background: url("../images/home-bg.webp") no-repeat rgba(0, 0, 0, 0.5);
   background-position: center;
@@ -94,4 +92,24 @@
 .btn:hover {
   background: var(--light-purple);
   color: var(--white);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .home .principal {
+    width: 90%; /* Reduce el tamaño de la caja en pantallas pequeñas */
+  }
+
+  .home .principal img {
+    max-width: 7rem; /* Reduce el tamaño del logo */
+  }
+
+  .home .principal h3 {
+    font-size: 2rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .btn {
+    padding: 1rem 2rem; /* Reduce el padding del botón */
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente del botón */
+  }
 }
