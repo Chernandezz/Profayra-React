@@ -1,16 +1,27 @@
 .home {
-  background: url("../images/home-bg.webp") no-repeat rgba(0, 0, 0, 0.5);
-  background-position: center;
+  position: relative; /* Agrega posición relativa al contenedor */
   top: 0;
-  background-attachment: fixed;
-  background-size: cover;
-  background-blend-mode: multiply;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.home::before {
+  /* Crea un pseudo-elemento para el fondo */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Usar gradient en lugar de un color sólido */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/home-bg.webp") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
 
 .home .principal {
