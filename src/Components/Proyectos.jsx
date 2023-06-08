@@ -9,6 +9,9 @@ import RockEdmImage from "../images/Rock EDM.webp";
 import MascotasImage from "../images/Mascotas.webp";
 import TheMovie from "../images/The Movie.webp";
 import Profayra from "../images/profayra.webp";
+import algoritmoGeneticoImage from "../images/algoritmoGenetico.webp";
+import ChatBotImage from "../images/chatBot.webp";
+import FibonacciImage from "../images/Fibonacci.webp";
 
 const listaProyectos = [
   {
@@ -24,6 +27,13 @@ const listaProyectos = [
     alt: "TheMovie",
     titulo: "Peliculas",
     tecnologias: ["React", "GitHub", "CSS"],
+  },
+  {
+    link: "https://algortimogeneticocristianhernandez.netlify.app/",
+    img: algoritmoGeneticoImage,
+    alt: "Algoritmo Genetico",
+    titulo: "Algoritmo Genetico",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
   },
   {
     link: "https://efectoparalaxnoche-ch.netlify.app/",
@@ -61,11 +71,25 @@ const listaProyectos = [
     tecnologias: ["HTML", "CSS", "JavaScript"],
   },
   {
+    link: "https://cristron.netlify.app/",
+    img: ChatBotImage,
+    alt: "ChatBot",
+    titulo: "ChatBot",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     link: "https://tienda-de-mascotas-chernandezz.netlify.app/",
     img: MascotasImage,
     alt: "Mascotas",
     titulo: "Mascotas",
     tecnologias: ["HTML", "CSS"],
+  },
+  {
+    link: "https://proyectofibonacci.netlify.app/",
+    img: FibonacciImage,
+    alt: "Fibonacci",
+    titulo: "Fibonacci",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
