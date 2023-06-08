@@ -10,6 +10,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+}
+
+.header.solid {
+  background: var(--black);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* added box-shadow for a slightly lifted appearance */
 }
 
 .header .logo {
