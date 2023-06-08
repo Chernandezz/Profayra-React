@@ -59,15 +59,6 @@ body {
   overflow-x: hidden;
 }
 
-.info {
-  background-color: #000;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .container {
   padding-top: 10rem;
 }
@@ -81,30 +72,4 @@ section {
 .aboutMe {
   color: var(--white);
   margin: 2rem 5rem;
-}
-
-hr {
-  width: 80%;
-  text-align: center;
-  color: white;
-  height: 1px;
-  background-color: var(--white);
-  margin-bottom: 1rem;
-}
-
-.separatorAndHeader {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 1rem 0;
-}
-
-.heading {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 4rem;
-  color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
 }
