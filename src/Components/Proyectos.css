@@ -1,0 +1,28 @@
+.proyectos {
+  padding: 4rem 0;
+}
+
+.separatorAndHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #333;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  list-style-type: none;
+  padding: 1rem 3rem;
+}
+
+/* @media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding: 1rem;
+  }
+} */
