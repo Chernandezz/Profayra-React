@@ -1,10 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Header from "./UI/Header";
+import Reserva from "./Components/Reserva";
+import Proyectos from "./Components/Proyectos";
 import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Reserva />
+      <Proyectos />
+    </>
+  );
 }
 
 export default App;
