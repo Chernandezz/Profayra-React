@@ -19,8 +19,7 @@
   height: 100%;
   /* Usar gradient en lugar de un color sólido */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/home-bg.webp") no-repeat center center fixed;
-  background-size: cover;
+    url("../images/home-bg.webp") no-repeat center center / cover;
   z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
 
